@@ -25,7 +25,7 @@ export function Footer() {
             About
           </Link>
           <Link href="/requestfeature" className={classNames("text-xs px-4 py-2", pathname === "/requestfeature" && "font-bold")}>
-            Request Feature
+            Request Features
           </Link>
           <Link href="/guidelines" className={classNames("text-xs px-4 py-2", pathname === "/guidelines" && "font-bold")}>
             Guidelines
