@@ -21,27 +21,26 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        {/* Meta tags for SEO and social media */}
-        <meta name="description" content="My App" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="My App" />
-        <meta property="og:description" content="The prime feed for hacker engineers building a decentralized future" />
-        <meta property="og:image" content="/kiwitag.png" />
-        <meta property="og:url" content="https://your-app-url.com" />
-        <meta property="og:type" content="website" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kiwi News" />
-        <meta name="twitter:description" content="The prime feed for hacker engineers building a decentralized future" />
-        <meta name="twitter:image" content="/kiwitag.png" />
-        <meta name="twitter:creator" content="@kiwinews" />
-        
-        {/* Telegram */}
-        <meta property="telegram:site" content="kiwinews" />
-        
-        {/* Add other meta tags as needed */}
+      {/* <!-- Primary Meta Tags --> */}
+<title>Kiwi News</title>
+<meta name="title" content="Kiwi News" />
+<meta name="description" content="The prime feed for hacker engineers building a decentralized future" />
+
+{/* <!-- Open Graph / Facebook --> */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://denews-finn-bags.vercel.app/" />
+<meta property="og:title" content="Kiwi News" />
+<meta property="og:description" content="The prime feed for hacker engineers building a decentralized future" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+{/* <!-- Twitter --> */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://denews-finn-bags.vercel.app/" />
+<meta property="twitter:title" content="Kiwi News" />
+<meta property="twitter:description" content="The prime feed for hacker engineers building a decentralized future" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+{/* <!-- Meta Tags Generated --> */}
       </Head>
       <WagmiConfig config={config}>
         <ConnectKitProvider>
