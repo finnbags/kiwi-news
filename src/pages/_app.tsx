@@ -22,21 +22,21 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <Head>
       {/* <!-- Primary Meta Tags --> */}
-<title>Kiwi News</title>
+<title>Kiwi News 🥝</title>
 <meta name="title" content="Kiwi News" />
 <meta name="description" content="The prime feed for hacker engineers building a decentralized future" />
 
 {/* <!-- Open Graph / Facebook --> */}
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://denews-finn-bags.vercel.app/" />
-<meta property="og:title" content="Kiwi News" />
+<meta property="og:title" content="Kiwi News 🥝" />
 <meta property="og:description" content="The prime feed for hacker engineers building a decentralized future" />
 <meta property="og:image" content="https://denews-finn-bags.vercel.app/kiwitag.png" />
 
 {/* <!-- Twitter --> */}
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://denews-finn-bags.vercel.app/" />
-<meta property="twitter:title" content="Kiwi News" />
+<meta property="twitter:title" content="Kiwi News 🥝" />
 <meta property="twitter:description" content="The prime feed for hacker engineers building a decentralized future" />
 <meta property="twitter:image" content="https://denews-finn-bags.vercel.app/kiwitag.png" />
 
