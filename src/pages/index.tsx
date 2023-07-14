@@ -2,7 +2,8 @@ import Head from "next/head";
 import { useCallback } from "react";
 
 import { StoriesList, StoryContainer } from "~/features/feed";
-import { TopNav } from "~/layout";
+import { TopNav, Footer } from "~/layout";
+
 import { api } from "~/utils/api";
 import { withStaticAPIHelpers } from "~/utils/api/ssg";
 
@@ -53,7 +54,7 @@ export default function Home() {
       <Head>
         <title>Kiwi News</title>
       </Head>
-      <div className="mx-auto mb-8 max-w-4xl pr-4 pt-4">
+      <div className="mx-auto max-w-7xl pr-4 pt-4 pb-4 bg-[#f6f6ef]">
         <StoriesList ordered>
           {topStories?.slice(0, 3).map((story) => (
             <StoryContainer
@@ -63,22 +64,6 @@ export default function Home() {
             />
           ))}
         </StoriesList>
-        <hr className="my-3" />
-        <div className="pl-10">
-          <h2 className="mb-2 text-gray-500">
-            Please help rate these stories:
-          </h2>
-          <StoriesList>
-            {newStories?.map((story) => (
-              <StoryContainer
-                {...story}
-                key={story.signature}
-                onUpvoteSubmitted={handleNewStoryUpvote}
-              />
-            ))}
-          </StoriesList>
-        </div>
-        <hr className="my-3" />
         <StoriesList ordered start={4}>
           {topStories?.slice(3).map((story) => (
             <StoryContainer
@@ -88,7 +73,9 @@ export default function Home() {
             />
           ))}
         </StoriesList>
+       
       </div>
+      <Footer/>
     </>
   );
 }

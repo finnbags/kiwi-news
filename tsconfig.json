@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-  ],
+, "src/features/feed/StoryContainer.js"  ],
   "exclude": ["node_modules"]
 }

@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import { StoriesList, StoryContainer } from "~/features/feed";
-import { TopNav } from "~/layout";
+import { TopNav, Footer } from "~/layout";
 import { api } from "~/utils/api";
 import { withStaticAPIHelpers } from "~/utils/api/ssg";
 
@@ -28,13 +28,14 @@ export default function Home() {
       <Head>
         <title>New on Kiwi News</title>
       </Head>
-      <div className="mx-auto mb-8 max-w-4xl px-4 pt-4">
+      <div className="mx-auto max-w-7xl pr-4 pt-4 pb-4 bg-[#f6f6ef]">
         <StoriesList>
           {stories?.map((story) => (
             <StoryContainer key={story.signature} {...story} />
           ))}
         </StoriesList>
       </div>
+      <Footer/>
     </>
   );
 }
