@@ -25,6 +25,8 @@ const CenteredContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-grow: 1; /* Added property */
+  margin-left: 20px; /* Added property */
+  margin-right: 20px; /* Added property */
 `;
 
 export function TopNav() {
@@ -36,17 +38,15 @@ export function TopNav() {
   const shouldShowTabs = !isSubmitPage && !isWelcomePage;
 
   return (
-    <div className="mt-2 mx-auto max-w-7xl">
+    <div className="mt-2 mx-auto max-w-7xl items-center">
+      <div className="flex items-center mx-auto justify-center m-4">
+        <span className="text-xl items-center">🥝</span>
+      </div>
+
       <div className="flex h-16 bg-limegreen items-center justify-between p-4">
         <div className="flex h-12 items-center">
           <span className="text-4xl mr-1">☰</span>
         </div>
-
-        <CenteredContainer> {/* Updated container */}
-          <div className="flex items-center mx-auto">
-            <span className="text-xl">🥝</span>
-          </div>
-        </CenteredContainer>
 
         <div className="flex h-12 items-center space-x-2 ml-auto">
           {!isSubmitPage && address && !isConnecting && !isDisconnected && (
